@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom'
 import { RiCloseLine } from 'react-icons/ri'
 import { AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { BiDish } from 'react-icons/bi'
-import Menu from '../../components/Menu'
+import Menu from '../Menu'
 import './layout.css'
 
 function Layout() {
@@ -70,7 +70,7 @@ function Layout() {
             <AiOutlineMail color="#f1f1f1" size={25} />
             <p>deliciousss2023@gmail.com</p>
           </div>
-          <p className='copyright'>Copyright &copy; 2023</p>
+          <p className="copyright">Copyright &copy; 2023</p>
         </div>
       </footer>
     </>

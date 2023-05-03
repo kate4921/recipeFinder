@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import ErrorPage from './pages/errorPage/error-page'
-import Layout from './pages/layout/Layout'
+import Layout from './components/layout/Layout'
 import StartPage from './pages/startPage/StartPage'
 import Home from './pages/Home'
 import FavoriteRecipe from './pages/favorites/FavoriteRecipe'
