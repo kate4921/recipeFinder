@@ -1,0 +1,73 @@
+.listAreas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* margin: 2rem 0; */
+}
+
+.styled-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0.5rem;
+  text-decoration: none;
+  background: linear-gradient(35deg, #494949, #313131);
+  width: 6rem;
+  height: 6rem;
+  cursor: pointer;
+  /* transform: scale(0.8); */
+}
+
+.styled-link h4 {
+  color: var(--color-light);
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.styled-link svg {
+  color: var(--color-light);
+  font-size: 1.5rem;
+}
+
+.styled-link-active {
+  background: linear-gradient(to right, #f27121, #e94057);
+}
+
+.styled-link h4 {
+  color: var(--color-light);
+}
+
+@media screen and (max-width: 550px) {
+  .listAreas{
+    padding: 1rem;
+  }
+  .styled-link {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.4rem;
+  }
+
+  .styled-link h4 {
+    color: var(--color-light);
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .listAreas{
+    padding: 1rem;
+  }
+  .styled-link {
+    width: 3.8rem;
+    height: 3.8rem;
+    margin: 0.3rem;
+  }
+
+  .styled-link h4 {
+    color: var(--color-light);
+    font-size: 0.6rem;
+  }
+}

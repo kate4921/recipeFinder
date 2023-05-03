@@ -1,0 +1,143 @@
+.contactWrapper {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  
+}
+
+.contactWrapper h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.foForm {
+  width: 50%;
+}
+
+.form-inner {
+  margin-top: 1rem;
+}
+
+.form-inner p {
+  color: var(--color-error);
+  font-size: 0.7rem;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.contactWrapper label{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.form-inner input,
+.form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  background: #e9eff6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.form-inner input[type='submit'] {
+  margin-top: 30px;
+  background: var(--basic-gradient);
+  border-bottom: 4px solid #d87d56;
+  color: var(--color-light);
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-inner input[type='submit']:not([disabled]):active {
+  transform: translateY(4px);
+}
+
+.form-inner input[type='submit']:disabled {
+  background: var(--disabled-gradient);
+  cursor: no-drop;
+}
+
+.form-inner textarea {
+  resize: none;
+}
+
+.icons-contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.icons {
+  margin: 1rem;
+  border-top: 1px solid var(--color-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons a {
+  background: var(--color-dark);
+  border-radius: 50%;
+  padding: 1rem 1.2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.icons a:hover {
+  background-color: #4c4c4c
+}
+
+.icons a:active {
+  background-color: #4c4c4c;
+  transform: translateY(4px);
+}
+
+
+@media screen and (max-width: 1000px) {
+   .contactWrapper {
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-around;
+  }
+
+  .foForm {
+    width: 100%;
+  }
+
+  .icons-contact {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .contactWrapper h3 {
+    font-size: 16px;
+  }
+
+  .contactWrapper label {
+    font-size: 16px;
+  }
+
+  .icons-contact {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+
+  .icons a {
+    margin: 0.5rem;
+    padding: 0.6rem 0.8rem;
+  }
+}

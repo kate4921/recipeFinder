@@ -1,0 +1,60 @@
+.searchForm {
+  margin: 2rem 20rem;
+}
+
+.searchForm .innerform {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.searchForm input {
+  border: none;
+  background: linear-gradient(35deg, #494949, #313131);
+  font-size: 1.5rem;
+  color: var(--color-light);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.searchForm svg {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  /* transform: translate(100%,-50%); */
+  color: var(--color-light);
+}
+
+@media screen and (max-width: 1050px) {
+    .searchForm {
+        margin: 2rem 10rem;
+      }
+  }
+  
+  @media screen and (max-width: 770px) {
+    .searchForm {
+        margin: 2rem 6rem;
+      }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .searchForm {
+        margin: 1rem 4rem;
+      }
+      .searchForm input {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+      }
+  }
+
+  @media screen and (max-width: 280px) {
+    .searchForm {
+      margin: 1rem 2rem;
+    }
+    .searchForm input {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+  }

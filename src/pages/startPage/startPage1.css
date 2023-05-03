@@ -1,0 +1,92 @@
+.bg {
+  background: var(--basic-gradient);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.startPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  max-height: 100%;
+  margin-top: 12.2em;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonStart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--color-dark);
+  border-radius: 50%;
+  background-color: var(--color-dark);
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  padding: 2.8rem 2rem;
+
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-light);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.startButtom {
+  color: var(--color-light);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.scale-up-center1 {
+  -webkit-animation: scale-up-center 0.9s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center1 {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center1 {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

@@ -1,13 +1,90 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  /* font-family:'Roboto',Arial, Helvetica, sans-serif; */
+  /*font-family:Verdana, Geneva, Tahoma, sans-serif ;*/
+  font-family: 'Montserrat', sans-serif;
+  color: #272727;
+  font-size: 18px;
+  font-weight: 500;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*!!!!!!!!!!!!!!!!!*/
+.main {
+  flex: 1 1 1rem;
+}
+
+:root {
+  --basic-gradient: linear-gradient(
+    90deg,
+    rgba(255, 203, 0, 1) 0%,
+    rgba(255, 59, 0, 1) 100%
+  );
+
+  --disabled-gradient: linear-gradient(
+    90deg,
+    rgba(255, 203, 0, 0.44) 0%,
+    rgba(255, 59, 0, 0.44) 100%
+  );
+
+  --color-light: #f1f1f1;
+  --activ-link-color: rgb(255, 203, 0);
+  --color-dark: #272727;
+  --color-error: rgb(255, 59, 0);
+  --botton-sh: #d87d56;
+  --color-sh: rgba(0, 0, 0, 0.2);
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.nores {
+  text-align: center;
 }
