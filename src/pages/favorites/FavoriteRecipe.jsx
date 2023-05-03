@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import TemtlateRecipes from '../../components/templateRecipes/TemtlateRecipes'
+import TemtlateRecipes from '../../components/templateRecipes/TemplateRecipes'
 import {
   removeAllFavoriteRecipes,
   setFavoriteRecipes,

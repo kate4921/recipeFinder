@@ -3,7 +3,7 @@ import { useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchPecipesByCuisine } from '../store/actionsRecipes'
 // import { selectRecipes } from '../store/recipeSelectors'
-import TemtlateRecipes from '../components/templateRecipes/TemtlateRecipes'
+import TemtlateRecipes from '../components/templateRecipes/TemplateRecipes'
 import Loading from '../components/loading/Loading'
 
 function Cuisine() {

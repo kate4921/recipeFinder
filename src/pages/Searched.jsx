@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchSearchedPecipes } from '../store/actionsRecipes'
-import TemtlateRecipes from '../components/templateRecipes/TemtlateRecipes'
+import TemtlateRecipes from '../components/templateRecipes/TemplateRecipes'
 import Loading from '../components/loading/Loading'
 
 function Searched() {
