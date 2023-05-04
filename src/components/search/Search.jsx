@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router'
 import './search.css'
 
 function Search() {
-  const [input, setInpyt] = useState('')
+  const [input, setInput] = useState('')
   const navigate = useNavigate()
 
   const submitHandler = (e) => {
     e.preventDefault()
     navigate('searched/' + input.trim())
-    setInpyt('')
+    setInput('')
   }
 
   return (
@@ -21,7 +21,7 @@ function Search() {
           <input
             type="text"
             value={input}
-            onChange={(e) => setInpyt(e.target.value)}
+            onChange={(e) => setInput(e.target.value)}
           />
         </div>
       </form>

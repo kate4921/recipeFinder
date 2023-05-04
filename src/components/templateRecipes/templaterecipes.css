@@ -5,20 +5,21 @@
   /* grid-gap: 1rem; */
 }
 
-.cardwrapper{
+.cardwrapper {
   padding: 1rem;
 }
 
-.nores{
+.nores {
   margin: 2rem 6rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
   .gridwrapper {
     margin: 1rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 
-  .nores{
+  .nores {
     margin: 1rem;
   }
 }
@@ -29,7 +30,7 @@
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 
-  .nores{
+  .nores {
     margin: 1rem;
   }
 }
@@ -40,7 +41,7 @@
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 
-  .nores{
+  .nores {
     margin: 1rem;
   }
 }

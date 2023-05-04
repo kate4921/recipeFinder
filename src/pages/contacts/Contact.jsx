@@ -16,12 +16,6 @@ function Contact() {
 
   const sendEmail = (data) => {
     emailjs
-      // .sendForm(
-      //   'service_5jdt6sd',
-      //   'template_vaw0lfg',
-      //   form.current,
-      //   'EVLcwQtdlzQHKVGCp'
-      // )
       .sendForm(
         process.env.REACT_APP_FOR_EMAIL_SERVICE_ID,
         process.env.REACT_APP_FOR_EMAIL_TEMPLATE_ID,
