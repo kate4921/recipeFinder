@@ -16,7 +16,7 @@
 @media screen and (max-width: 760px) {
   .gridwrapper {
     margin: 1rem 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   }
 
   .nores {
