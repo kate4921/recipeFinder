@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './startPage1.css'
+import './startPage.css'
 
 function StartPage() {
   return (
