@@ -1,7 +1,18 @@
-#error-page{
-    margin: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#error-page {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorlink {
+  color: orange;
+  font-size: 1rem;
+  /* font-family: 'Monsieur La Doulaise', cursive; */
+}
+
+.errorlink:hover {
+  color: tomato;
+  text-decoration: underline;
 }
