@@ -15,7 +15,7 @@ function TemplateRecipesSlide({ title, recipes }) {
       1500: {
         perPage: 2,
       },
-      750: {
+      550: {
         perPage: 1,
       },
     },
