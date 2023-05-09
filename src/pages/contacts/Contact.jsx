@@ -25,13 +25,13 @@ function Contact() {
       .then(
         (result) => {
           console.log(result.text)
+          alert("Mail sent successfully")
         },
         (error) => {
           console.log(error.text)
+          alert("Sorry! An error occurred:( "+ error)
         }
       )
-
-    alert("Mail sent successfully")
     reset()
   }
 
