@@ -7,12 +7,12 @@
 }
 
 .errorlink {
-  color: orange;
+  color: blue;
   font-size: 1rem;
   /* font-family: 'Monsieur La Doulaise', cursive; */
 }
 
 .errorlink:hover {
-  color: tomato;
+  /* color: blue; */
   text-decoration: underline;
 }

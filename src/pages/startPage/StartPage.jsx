@@ -1,13 +1,8 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './startPage.css'
 
 function StartPage() {
-
-  const navigate = useNavigate()
-
-  const goRecipes = () => navigate('/recipes/')
-
   return (
     <div className="bg">
       <div className="startPage">
@@ -15,7 +10,7 @@ function StartPage() {
           <h1>deliciousss</h1>
           <h2>Find your recipe</h2>
         </div>
-        <button className="buttonStart scale-up-center1" onClick={goRecipes}>Start</button>
+        <Link to='/recipes/'  className="buttonStart scale-up-center1">Start</Link>
       </div>
     </div>
   )
